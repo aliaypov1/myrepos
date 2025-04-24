@@ -1,0 +1,192 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #050f1a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+  }
+  
+  .part-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 280px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out; /* Плавный переход */
+  }
+  
+  
+  .part-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out; /* Плавный переход для изображений */
+  }
+  
+  .part-card:hover img {
+    opacity: 0.8; /* Немного затемняем изображение при ховере */
+  }
+  
+  .part-card h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    transition: color 0.3s ease-in-out; /* Плавный переход цвета текста */
+  }
+  
+  .part-card p {
+    font-size: 1em;
+    margin-top: 10px;
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .highlight-section {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .highlight-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .highlight-box {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .highlight-box:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-5px);
+  }
+  
+  .highlight-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .highlight-box p {
+    font-size: 1em;
+  }
+  .button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #00b4db, #0083b0);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 179, 219, 0.3);
+  }
+  
+  .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 179, 219, 0.5);
+    background: linear-gradient(135deg, #0083b0, #00b4db);
+  }
+ .umg{
+    padding: 50px;
+ }
+  
+  .fullscreen-image {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* 100% от высоты экрана */
+    overflow: hidden;
+  }
+  
+  .fullscreen-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Картинка будет полностью видна без обрезки */
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+  }

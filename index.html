@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Otomotiv Parçaları Mağazası</title>
+  <link rel="stylesheet" href="style/style.css">
+  <style>
+    /* Медиа-запросы для адаптивности */
+    @media (max-width: 1200px) {
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+     
+      .highlight-grid {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    
+    }
+
+    @media (max-width: 768px) {
+      .fullscreen-image {
+        display: none;
+      }
+      .part-card {
+        width: 100%;
+        margin: 1rem 0;
+      }
+      .highlight-grid {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+     
+      header h1 {
+        font-size: 1.5rem;
+      }
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+      .highlight-box h3,
+      .highlight-box p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AutoParçalar Ali Imran</h1>
+  </header>
+
+<!-- <nav>
+    <a href="#">Anasayfa</a>
+    <a href="#catalog">Katalog</a>
+    <a href="#contact">İletişim</a>
+  </nav>-->
+  <div class="umg"><div class="fullscreen-image">
+    <img src="images/avto-na-zapchasti-pravila.jpg" alt="Картинка на весь экран">
+  </div></div>
+  
+ 
+  <div class="container">
+    <div class="part-card">
+      <img src="images/disk.jfif" alt="Fren Diski">
+      <h3>Fren Diski</h3>
+      <button class="button">Detaylar</button>
+    </div>
+
+    <div class="part-card">
+      <img src="images/12534695_1.jpg" alt="Amortisör">
+      <h3>Amortisör</h3>
+      <button class="button">Detaylar</button>
+    </div>
+    <div class="part-card">
+        <img src="images/images1.jfif" alt="Amortisör">
+        <h3>Araba Tamponları</h3>
+        <button class="button">Detaylar</button>
+      </div>
+      <div class="part-card">
+        <img src="images/fara.jfif" alt="Amortisör">
+        <h3>farlar</h3>
+        <button class="button">Detaylar</button>
+      </div>
+      <div class="part-card">
+        <img src="images/rul.jfif" alt="Amortisör">
+        <h3>direksiyon</h3>
+        <button class="button">Detaylar</button>
+      </div>
+      <div class="part-card">
+        <img src="images/zerkalo.jpg" alt="Amortisör">
+        <h3>aynalar</h3>
+        <button class="button">Detaylar</button>
+      </div>
+      <div class="part-card">
+        <img src="images/porshni_auto_dvs.jpg" alt="Amortisör">
+        <h3>pistonlar</h3>
+        <button class="button">Detaylar</button>
+      </div>
+      <div class="part-card">
+        <img src="images/kapot-s-mbw.png" alt="Amortisör">
+        <h3>araba kapotu</h3>
+        <button class="button">Detaylar</button>
+      </div>
+  </div>
+
+  <footer>
+    <p>&copy; AutoParçalar</p>
+  </footer>
+</body>
+</html>
