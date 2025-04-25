@@ -28,6 +28,12 @@
     }
 
     @media (max-width: 768px) {
+      .container{
+        margin-top: 150px;
+      }
+      .umg{
+        display: none;
+      }
       .fullscreen-image {
         display: none;
       }
@@ -58,15 +64,18 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>AutoParçalar Ali Imran</h1>
-  </header>
-
-<!-- <nav>
-    <a href="#">Anasayfa</a>
-    <a href="#catalog">Katalog</a>
-    <a href="#contact">İletişim</a>
-  </nav>-->
+  <div class="header">
+    <header>
+      <h1>AutoParçalar Ali Imran</h1>
+    </header>
+  
+   <nav>
+      <a href="#">Anasayfa</a>
+      <a href="#catalog">Katalog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+  
   <div class="umg"><div class="fullscreen-image">
     <img src="images/avto-na-zapchasti-pravila.jpg" alt="Картинка на весь экран">
   </div></div>
@@ -84,7 +93,7 @@
       <h3>Amortisör</h3>
       <button class="button">Detaylar</button>
     </div>
-    <div class="part-card">
+    <div id="catalog" class="part-card">
         <img src="images/images1.jfif" alt="Amortisör">
         <h3>Araba Tamponları</h3>
         <button class="button">Detaylar</button>
@@ -94,7 +103,7 @@
         <h3>farlar</h3>
         <button class="button">Detaylar</button>
       </div>
-      <div class="part-card">
+      <div   class="part-card">
         <img src="images/rul.jfif" alt="Amortisör">
         <h3>direksiyon</h3>
         <button class="button">Detaylar</button>
@@ -116,7 +125,10 @@
       </div>
   </div>
 
-  <footer>
+  <footer id="contact">
     <p>&copy; AutoParçalar</p>
+    <p>phone +90-533-989-98-12</p>
+    <p>Whatsap +90-534-773-44-93</p>
+    <p>telegram +90-535-989-96-41</p>
   </footer>
 </body>
