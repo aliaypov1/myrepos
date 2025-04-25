@@ -207,3 +207,33 @@ footer {
   padding: 10px 0;
   margin-top: 40px;
 }
+
+.map-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem; 
+  box-sizing: border-box;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .map-container iframe {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
